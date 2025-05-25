@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SANGA ONLINE LIBRARY</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+    .floating-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .floating-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    .fixed-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+    }
+    .fixed-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+  <header class="fixed-header w-full bg-blue-600 text-white text-center py-4">
+    <h1 class="text-3xl md:text-4xl font-bold">SANGA ONLINE LIBRARY</h1>
+  </header>
+  <div class="container mx-auto p-4 flex-grow mt-16 mb-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <a href="https://example.com/1" target="_blank" class="floating-card block max-w-sm mx-auto bg-white rounded-lg shadow-lg">
+        <img src="https://via.placeholder.com/400x300" alt="Card Image 1" class="w-full h-auto rounded-t-lg">
+     
+      </a>
+      <a href="https://example.com/2" target="_blank" class="floating-card block max-w-sm mx-auto bg-white rounded-lg shadow-lg">
+        <img src="bobea.PNG/400x280" alt="Card Image 2" class="w-full h-auto rounded-t-lg">
+      </a>
+      
+    </div>
+  </div>
+  <footer class="fixed-footer w-full bg-blue-600 text-center py-2">
+    <p class="text-sm md:text-base italic text-gray-300">Materials not ours. Issues? Contact: <a href="mailto:davidgreyson393@gmail.com" class="underline hover:text-gray-100">click here</a>.</p>
+  </footer>
+</body>
+</html>
